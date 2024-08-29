@@ -23,6 +23,7 @@
             border: 2px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none; /* 初始时隐藏视频 */
         }
         #playButton {
             margin-top: 20px;
@@ -47,13 +48,14 @@
             Your browser does not support the video tag.
         </video>
         <br>
-        <button id="playButton">立刻领取</button>
+        <button id="playButton">立即领取</button>
     </div>
 
     <script>
         document.getElementById('playButton').addEventListener('click', function() {
             var video = document.getElementById('video');
-            video.play();
+            video.style.display = 'block'; // 显示视频
+            video.play(); // 播放视频
         });
     </script>
 </body>
