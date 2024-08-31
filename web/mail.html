@@ -44,6 +44,14 @@
         input[type="submit"]:hover {
             background-color: #4cae4c;
         }
+        #loading {
+            display: none;
+            margin-top: 20px;
+        }
+        #feedback {
+            margin-top: 20px;
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -69,6 +77,8 @@
             <textarea id="content" name="content" rows="5" required></textarea><br><br>
 
             <input type="submit" value="发送邮件">
+            <div id="loading">正在发送...</div>
+            <div id="feedback"></div>
         </form>
     </div>
 
@@ -94,17 +104,30 @@
                 }]
             };
 
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://lively-snow-4c0f.shundebo.workers.dev/', true);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    alert('邮件发送成功！');
-                } else if (xhr.readyState === 4) {
-                    alert('邮件发送失败：' + xhr.responseText);
+            fetch('https://lively-snow-4c0f.shundebo.workers.dev/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    return null; // 根据你的描述，成功时返回null
+                } else {
+                    throw new Error('邮件发送失败');
                 }
-            };
-            xhr.send(JSON.stringify(formData));
+            })
+            .then(result => {
+                document.getElementById('feedback').textContent = '邮件发送成功！';
+                document.getElementById('feedback').style.color = 'green';
+            })
+            .catch(error => {
+                document.getElementById('feedback').textContent = '邮件发送失败：' + error.message;
+            })
+            .finally(() => {
+                document.getElementById('loading').style.display = 'none'; // 隐藏加载指示器
+            });
         });
     </script>
 </body>
