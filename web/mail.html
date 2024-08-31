@@ -1,137 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>邮件发送界面</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-        input[type="email"],
-        input[type="text"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        input[type="submit"] {
-            background-color: #5cb85c;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        input[type="submit"]:hover {
-            background-color: #4cae4c;
-        }
-        #loading {
-            display: none;
-            margin-top: 20px;
-        }
-        #feedback {
-            margin-top: 20px;
-            color: red;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>发送邮件</h2>
-        <form id="emailForm">
-            <label for="fromEmail">发件人邮箱:</label>
-            <input type="email" id="fromEmail" name="fromEmail" required><br><br>
-
-            <label for="fromName">发件人姓名:</label>
-            <input type="text" id="fromName" name="fromName" required><br><br>
-
-            <label for="toEmail">收件人邮箱:</label>
-            <input type="email" id="toEmail" name="toEmail" required><br><br>
-
-            <label for="toName">收件人姓名:</label>
-            <input type="text" id="toName" name="toName" required><br><br>
-
-            <label for="subject">邮件标题:</label>
-            <input type="text" id="subject" name="subject" required><br><br>
-
-            <label for="content">邮件内容:</label>
-            <textarea id="content" name="content" rows="5" required></textarea><br><br>
-
-            <input type="submit" value="发送邮件">
-            <div id="loading">正在发送...</div>
-            <div id="feedback"></div>
-        </form>
-    </div>
-
-    <script>
-        document.getElementById('emailForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // 阻止表单默认提交行为
-
-            var formData = {
-                from: {
-                    email: document.getElementById('fromEmail').value,
-                    name: document.getElementById('fromName').value
-                },
-                personalizations: [{
-                    to: [{
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发送邮件</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+async function sendEmail() {
+    const apiUrl = 'https://<sender-name>.<your-name>.workers.dev'; // 替换为您的Worker URL
+    const data = {
+        from: {
+            email: document.getElementById('fromEmail').value,
+            name: document.getElementById('fromName').value
+        },
+        personalizations: [
+            {
+                to: [
+                    {
                         email: document.getElementById('toEmail').value,
                         name: document.getElementById('toName').value
-                    }]
-                }],
-                subject: document.getElementById('subject').value,
-                content: [{
-                    type: "text/plain",
-                    value: document.getElementById('content').value
-                }]
-            };
+                    }
+                ]
+            }
+        ],
+        subject: document.getElementById('subject').value,
+        content: [
+            {
+                type: "text/plain",
+                value: document.getElementById('emailBody').value
+            }
+        ]
+    };
 
-            fetch('https://lively-snow-4c0f.shundebo.workers.dev/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Methods': 'POST',
-                    'Access-Control-Allow-Headers': 'Content-Type'
-                },
-                body: JSON.stringify(formData)
-            })
-            .then(response => {
-                if (response.ok) {
-                    return null; // 根据你的描述，成功时返回null
-                } else {
-                    throw new Error('邮件发送失败');
-                }
-            })
-            .then(result => {
-                document.getElementById('feedback').textContent = '邮件发送成功！';
-                document.getElementById('feedback').style.color = 'green';
-            })
-            .catch(error => {
-                document.getElementById('feedback').textContent = '邮件发送失败：' + error.message;
-            })
-            .finally(() => {
-                document.getElementById('loading').style.display = 'none'; // 隐藏加载指示器
-            });
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
         });
-    </script>
+        const result = await response.json();
+        if (response.ok) {
+            alert('邮件发送成功！');
+        } else {
+            alert('邮件发送失败：' + result.message);
+        }
+    } catch (error) {
+        console.error('请求失败:', error);
+        alert('邮件发送失败：' + error.message);
+    }
+}
+</script>
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">发送邮件</h1>
+    <form id="emailForm" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="fromName" class="form-label">发件人名称：</label>
+            <input type="text" class="form-control" id="fromName" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="fromEmail" class="form-label">发件人邮箱：</label>
+            <input type="email" class="form-control" id="fromEmail" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="toName" class="form-label">收件人名称：</label>
+            <input type="text" class="form-control" id="toName">
+        </div>
+
+        <div class="mb-3">
+            <label for="toEmail" class="form-label">收件人邮箱：</label>
+            <input type="email" class="form-control" id="toEmail" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="subject" class="form-label">邮件主题：</label>
+            <input type="text" class="form-control" id="subject" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="emailBody" class="form-label">邮件内容：</label>
+            <textarea class="form-control" id="emailBody" rows="4" required></textarea>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="sendEmail()">发送邮件</button>
+    </form>
+</div>
 </body>
 </html>
