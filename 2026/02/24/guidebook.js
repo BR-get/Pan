@@ -124,7 +124,7 @@ const CATEGORIES = {
     }},
 
     "吐司、果冻和果汁": { icon: "textures/items/sweet_berry_toast", subcategories: {
-        "Toasts": { icon: "textures/items/sweet_berry_toast", items: {
+        "吐司": { icon: "textures/items/sweet_berry_toast", items: {
             "甜莓吐司": { icon: "textures/items/sweet_berry_toast", desc: "涂有甜浆果酱的脆吐司.", obtain: "甜浆果面包 (无特定摆放).", hunger: "6 (3 点)", saturation: "1.2 (正常)", other: "30% 堆肥几率", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[甜莓] + [面包]\n§7= 甜莓吐司 x1§r" },
             "苹果吐司": { icon: "textures/items/apple_toast", desc: "吐司上铺有苹果片.", obtain: "苹果 + 面包 (无特定摆放).", hunger: "6 (3 点)", saturation: "1.2 (正常)", other: "30% 堆肥几率", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[苹果] + [面包]\n§7= 苹果吐司 x1§r" },
             "发光莓果吐司": { icon: "textures/items/glow_berry_toast", desc: "涂有微微闪光的光果酱的吐司.", obtain: "发光浆果 + 面包 (无特定摆放).", hunger: "6 (3 点)", saturation: "1.2 (正常)", other: "30% 堆肥几率", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[发光浆果] + [面包]\n§7= 发光莓果吐司 x1§r" },
