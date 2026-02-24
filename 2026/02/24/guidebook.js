@@ -152,52 +152,52 @@ const CATEGORIES = {
             "发光莓果汁": { icon: "textures/items/glow_berry_juice", desc: "一种散发着温暖光芒的果汁+.", obtain: "水瓶 + 发光浆果 + 糖(无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (贫穷)", other: "可叠加至16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[水瓶] + [发光浆果] + [糖]\n§7= 发光莓果汁 x1§r" },
             "鬼莓汁": { icon: "textures/items/ghostberry_juice", desc: "一种带有幽灵莓的苍白、空灵果汁.", obtain: "水瓶+幽灵莓+糖 (无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (贫穷)", other: "可叠加至16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[水瓶] + [幽灵莓] + [糖]\n§7= 鬼莓汁 x1§r" },
             "墨莓汁": { icon: "textures/items/inkberry_juice", desc: "一种能弄脏所接触物品的深色果汁.", obtain: "水瓶 + 黑莓 + 糖 (无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (贫穷)", other: "可叠加至16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[水瓶] + [墨莓] + [糖]\n§7= 墨莓汁 x1§r" },
-            "Gooseberry Juice": { icon: "textures/items/gooseberry_juice", desc: "酸涩的醋栗汁。", obtain: "水瓶 + 醋栗 + 糖 (无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (Poor)", other: "堆叠到16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[水瓶] + [醋栗] + [糖]\n§7= 醋栗汁 x1§r" },
-            "Cherry Juice": { icon: "textures/items/cherry_juice", desc: "玻璃瓶中的甜樱桃汁。", obtain: "水瓶 + 樱桃 + 糖 (无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (Poor)", other: "堆叠到16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[水瓶] + [樱桃] + [糖]\n§7= 樱桃汁 x1§r" },
-            "Plum Juice": { icon: "textures/items/plum_juice", desc: "A smooth juice made from ripe plums.", obtain: "Water Bottle + Plum + Sugar (无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (Poor)", other: "Stacks to 16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Water Bottle] + [Plum] + [糖]\n§7= Plum Juice x1§r" },
-            "紫松果 Juice": { icon: "textures/items/chorus_fruit_juice", desc: "A fizzy juice with 紫松果. Teleports on item consumption.", obtain: "Water Bottle + 紫松果 + Sugar (无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (Poor)", other: "Teleports on item consumption\nStacks to 16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Water Bottle] + [紫松果] + [糖]\n§7= 紫松果 Juice x1§r" }
+            "醋栗汁": { icon: "textures/items/gooseberry_juice", desc: "酸涩的醋栗汁。", obtain: "水瓶 + 醋栗 + 糖 (无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (Poor)", other: "堆叠到16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[水瓶] + [醋栗] + [糖]\n§7= 醋栗汁 x1§r" },
+            "樱桃汁": { icon: "textures/items/cherry_juice", desc: "玻璃瓶中的甜樱桃汁。", obtain: "水瓶 + 樱桃 + 糖 (无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (Poor)", other: "堆叠到16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[水瓶] + [樱桃] + [糖]\n§7= 樱桃汁 x1§r" },
+            "李子汁": { icon: "textures/items/plum_juice", desc: "由成熟李子制成的顺滑果汁.", obtain: "水瓶 + 李子 + 糖(无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (Poor)", other: "叠加至16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[水瓶] + [李子] + [糖]\n§7= 李子汁 x1§r" },
+            "紫松果汁": { icon: "textures/items/chorus_fruit_juice", desc: "一款含紫松果的气泡果汁. 消耗物品时传送.", obtain: "水瓶 + 紫松果 + 糖 (无特定摆放).", hunger: "4 (2 点)", saturation: "0.2 (贫穷)", other: "消耗物品时传送\n可叠加至16", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Water Bottle] + [紫松果] + [糖]\n§7= 紫松果汁 x1§r" }
         }}
     }},
 
-    "Meats": { icon: "textures/items/cooked_turkey", items: {
-        "Turkey": { icon: "textures/items/cooked_turkey", desc: "农场鸟类，会掉落各种肉块。", obtain: "由火鸡生物死亡时掉落。", hunger: null, saturation: null, related: [
-            { name: "Raw Turkey", icon: "textures/items/raw_turkey", desc: "未煮熟的火鸡肉。可以放置。给予饥饿效果。", obtain: "由火鸡生物死亡时掉落。", hunger: "2 (1 shank)", saturation: "1.6 (Good)", other: "可以放置\n给予饥饿效果" },
-            { name: "Cooked Turkey", icon: "textures/items/cooked_turkey", desc: "多汁的熟火鸡。可以放置。", obtain: "熔炼生火鸡肉。", hunger: "8 (4 点)", saturation: "1.6 (Good)", other: "可以放置", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\nRaw Turkey -> Cooked Turkey" },
-            { name: "Raw Turkey Leg", icon: "textures/items/raw_turkey_leg", desc: "生火鸡腿。像剑一样握持。给予饥饿效果。", obtain: "从生火鸡肉合成 (无特定摆放)。", hunger: "1 (0.5 点)", saturation: "0.6 (Low)", other: "像剑一样握持\n给予饥饿效果", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Raw Turkey]\n§7= Raw Turkey Leg x2§r" },
-            { name: "Cooked Turkey Leg", icon: "textures/items/cooked_turkey_leg", desc: "完美烤制的火鸡腿。像剑一样握持。", obtain: "熔炼生火鸡腿。也从熟火鸡合成 (无特定摆放)。", hunger: "2 (1 shank)", saturation: "1.6 (Good)", other: "像剑一样握持", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\nRaw Turkey Leg -> Cooked Turkey Leg\n\n§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Cooked Turkey]\n§7= Cooked Turkey Leg x2§r" },
-            { name: "Turkey Feather", icon: "textures/items/turkey_feather", desc: "火鸡的羽毛。在大多数配方中可以用作羽毛。", obtain: "由火鸡生物死亡时掉落。", hunger: null, saturation: null },
-            { name: "Turkey Egg", icon: "textures/items/turkey_egg", desc: "火鸡下的蛋。可以投掷或在配方中用作蛋。", obtain: "由火鸡生物定期掉落。", hunger: null, saturation: null }
+    "肉类": { icon: "textures/items/cooked_turkey", items: {
+        "土耳其": { icon: "textures/items/cooked_turkey", desc: "农场鸟类，会掉落各种肉块。", obtain: "由火鸡生物死亡时掉落。", hunger: null, saturation: null, related: [
+            { name: "生火鸡", icon: "textures/items/raw_turkey", desc: "未煮熟的火鸡肉。可以放置。给予饥饿效果。", obtain: "由火鸡生物死亡时掉落。", hunger: "2 (1 shank)", saturation: "1.6 (Good)", other: "可以放置\n给予饥饿效果" },
+            { name: "熟火鸡", icon: "textures/items/cooked_turkey", desc: "多汁的熟火鸡。可以放置。", obtain: "熔炼生火鸡肉。", hunger: "8 (4 点)", saturation: "1.6 (Good)", other: "可以放置", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\n生火鸡 -> 熟火鸡" },
+            { name: "生火鸡腿", icon: "textures/items/raw_turkey_leg", desc: "生火鸡腿。像剑一样握持。给予饥饿效果。", obtain: "从生火鸡肉合成 (无特定摆放)。", hunger: "1 (0.5 点)", saturation: "0.6 (Low)", other: "像剑一样握持\n给予饥饿效果", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[生火鸡]\n§7= 生火鸡腿 x2§r" },
+            { name: "熟火鸡腿", icon: "textures/items/cooked_turkey_leg", desc: "完美烤制的火鸡腿。像剑一样握持。", obtain: "熔炼生火鸡腿。也从熟火鸡合成 (无特定摆放)。", hunger: "2 (1 点)", saturation: "1.6 (好)", other: "像剑一样握持", recipe: "§l§6S融炼:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\n生火鸡腿 -> 熟火鸡腿\n\n§l§6食谱:§r §7工作台 (无特定摆放)§r\n[熟火鸡]\n§7= 熟火鸡腿 x2§r" },
+            { name: "火鸡羽毛", icon: "textures/items/turkey_feather", desc: "火鸡的羽毛。在大多数配方中可以用作羽毛。", obtain: "由火鸡生物死亡时掉落。", hunger: null, saturation: null },
+            { name: "火鸡蛋", icon: "textures/items/turkey_egg", desc: "火鸡下的蛋。可以投掷或在配方中用作蛋。", obtain: "由火鸡生物定期掉落。", hunger: null, saturation: null }
         ]},
-        "Camel": { icon: "textures/items/cooked_camel_meat", desc: "从骆驼获得的肉。", obtain: "由骆驼死亡时掉落。", hunger: null, saturation: null, related: [
-            { name: "Raw Camel Meat", icon: "textures/items/raw_camel_meat", desc: "骆驼的生肉。", obtain: "由骆驼死亡时掉落。", hunger: "3 (1.5 点)", saturation: "0.6 (Low)" },
-            { name: "Cooked Camel Meat", icon: "textures/items/cooked_camel_meat", desc: "嫩熟的骆驼肉。", obtain: "熔炼生骆驼肉。", hunger: "8 (4 点)", saturation: "1.6 (Good)", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\nRaw Camel Meat -> Cooked Camel Meat" }
+        "骆驼": { icon: "textures/items/cooked_camel_meat", desc: "从骆驼获得的肉。", obtain: "由骆驼死亡时掉落。", hunger: null, saturation: null, related: [
+            { name: "生骆驼肉", icon: "textures/items/raw_camel_meat", desc: "骆驼的生肉。", obtain: "由骆驼死亡时掉落。", hunger: "3 (1.5 点)", saturation: "0.6 (低)" },
+            { name: "熟骆驼肉", icon: "textures/items/cooked_camel_meat", desc: "嫩熟的骆驼肉。", obtain: "熔炼生骆驼肉。", hunger: "8 (4 点)", saturation: "1.6 (良好)", recipe: "§l§6 熔炼:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\n生骆驼肉 -> 熟骆驼肉" }
         ]},
-        "Strider": { icon: "textures/items/cooked_strider_meat", desc: "从下界中的炽足兽获得的肉。", obtain: "由炽足兽死亡时掉落。", hunger: null, saturation: null, related: [
-            { name: "Raw Strider Meat", icon: "textures/items/raw_strider_meat", desc: "炽足兽的生肉。闻起来像熔岩。", obtain: "由炽足兽死亡时掉落。", hunger: "2 (1 shank)", saturation: "0.6 (Low)" },
-            { name: "Cooked Strider Meat", icon: "textures/items/cooked_strider_meat", desc: "熟炽足兽肉。尝起来烟熏味。", obtain: "熔炼生炽足兽肉。", hunger: "6 (3 点)", saturation: "1.6 (Good)", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\nRaw Strider Meat -> Cooked Strider Meat" }
+        "炽足兽": { icon: "textures/items/cooked_strider_meat", desc: "从下界中的炽足兽获得的肉。", obtain: "由炽足兽死亡时掉落。", hunger: null, saturation: null, related: [
+            { name: "生炽足兽肉", icon: "textures/items/raw_strider_meat", desc: "炽足兽的生肉。闻起来像熔岩。", obtain: "由炽足兽死亡时掉落。", hunger: "2 (1 点)", saturation: "0.6 (低)" },
+            { name: "熟炽足兽肉", icon: "textures/items/cooked_strider_meat", desc: "熟炽足兽肉。尝起来烟熏味。", obtain: "熔炼生炽足兽肉。", hunger: "6 (3 点)", saturation: "1.6 (良好)", recipe: "§l§6 熔炼:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\n生炽足兽肉 -> 熟炽足兽肉" }
         ]},
-        "Squid": { icon: "textures/items/cooked_squid", desc: "从鱿鱼获得的肉。可以切成鱿鱼圈。", obtain: "由鱿鱼死亡时掉落。", hunger: null, saturation: null, related: [
-            { name: "Raw Squid", icon: "textures/items/raw_squid", desc: "整条生鱿鱼。", obtain: "由鱿鱼死亡时掉落。", hunger: "3 (1.5 点)", saturation: "1.2 (Normal)" },
-            { name: "Cooked Squid", icon: "textures/items/cooked_squid", desc: "整条熟鱿鱼。吃起来需要2倍时间。", obtain: "熔炼生鱿鱼。", hunger: "8 (4 点)", saturation: "2.4 (Supernatural)", other: "吃起来需要2倍时间", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\nRaw Squid -> Cooked Squid" },
-            { name: "Raw Calamari", icon: "textures/items/raw_calamari", desc: "生鱿鱼圈，准备烹饪。", obtain: "从生鱿鱼合成 (无特定摆放)。", hunger: "1 (0.5 点)", saturation: "0.6 (Low)", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Raw Squid]\n§7= Raw Calamari x3§r" },
-            { name: "Cooked Calamari", icon: "textures/items/cooked_calamari", desc: "金黄炸鱿鱼圈。", obtain: "熔炼生鱿鱼圈。也从熟鱿鱼合成 (无特定摆放)。", hunger: "3 (1.5 点)", saturation: "1.6 (Good)", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\nRaw Calamari -> Cooked Calamari\n\n§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Cooked Squid]\n§7= Cooked Calamari x3§r" }
+        "鱿鱼": { icon: "textures/items/cooked_squid", desc: "从鱿鱼获得的肉。可以切成鱿鱼圈。", obtain: "由鱿鱼死亡时掉落。", hunger: null, saturation: null, related: [
+            { name: "生鱿鱼", icon: "textures/items/raw_squid", desc: "整条生鱿鱼。", obtain: "由鱿鱼死亡时掉落。", hunger: "3 (1.5 点)", saturation: "1.2 (普通)" },
+                        { name: "熟鱿鱼", icon: "textures/items/cooked_squid", desc: "整条熟鱿鱼。吃起来需要 2 倍时间。", obtain: "熔炼生鱿鱼。", hunger: "8 (4 点)", saturation: "2.4 (极佳)", other: "吃起来需要 2 倍时间", recipe: "§l§6 熔炼:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\n生鱿鱼 -> 熟鱿鱼" },
+            { name: "生鱿鱼圈", icon: "textures/items/raw_calamari", desc: "生鱿鱼圈，准备烹饪。", obtain: "从生鱿鱼合成 (无特定摆放)。", hunger: "1 (0.5 点)", saturation: "0.6 (低)", recipe: "§l§6 食谱:§r §7 工作台 (无特定摆放)§r\n[生鱿鱼]\n§7= 生鱿鱼圈 x3§r" },
+            { name: "熟鱿鱼圈", icon: "textures/items/cooked_calamari", desc: "金黄炸鱿鱼圈。", obtain: "熔炼生鱿鱼圈。也从熟鱿鱼合成 (无特定摆放)。", hunger: "3 (1.5 点)", saturation: "1.6 (良好)", recipe: "§l§6 熔炼:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\n生鱿鱼圈 -> 熟鱿鱼圈\n\n§l§6 食谱:§r §7 工作台 (无特定摆放)§r\n[熟鱿鱼]\n§7= 熟鱿鱼圈 x3§r" }
         ]}
     }},
 
-"Other Foods": { icon: "textures/items/beef_sandwich", items: {
-        "Beef Sandwich": { icon: "textures/items/beef_sandwich", desc: "塞满熟牛肉和生菜的丰盛三明治。", obtain: "面包 + 熟牛肉 + 生菜 (无特定摆放)。", hunger: "12 (6 点)", saturation: "1.6 (Good)", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Bread] + [Cooked Beef] + [Lettuce]\n§7= Beef Sandwich x1§r" },
-        "Salad": { icon: "textures/items/salad", desc: "混合蔬菜的新鲜沙拉。", obtain: "土豆 + 胡萝卜 + 甜菜根 + 碗 (无特定摆放)。", hunger: "6 (3 点)", saturation: "1.2 (Normal)", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Potato] + [Carrot] + [Beetroot] + [Bowl]\n§7= Salad x1§r" },
-        "Sweet Berry Yogurt": { icon: "textures/items/sweet_berry_yogurt", desc: "混合甜浆果的奶油酸奶。吃起来2倍快。", obtain: "甜浆果、牛奶桶、碗。", hunger: "4 (2 点)", saturation: "2.4 (Supernatural)", other: "吃起来2倍快\n只能堆叠到1", recipe: "§l§6食谱:§r §7工作台§r\n[Sweet Berries]\n[Milk Bucket]\n[Bowl]\n§7= Sweet Berry Yogurt x1 + Bucket x1§r" },
-        "Tofflenut Broth": { icon: "textures/items/tofflenut_broth", desc: "由tofflenut浆果制成的温暖肉汤。", obtain: "Tofflenut浆果 x3 + 碗 (无特定摆放)。", hunger: "6 (3 点)", saturation: "2.4 (Supernatural)", other: "只能堆叠到1", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Tofflenut Berries] + [Tofflenut Berries] + [Tofflenut Berries] + [Bowl]\n§7= Tofflenut Broth x1§r" },
-        "Tofflenut Sap": { icon: "textures/items/tofflenut_sap", desc: "从tofflenut灌木收集的粘稠树液。", obtain: "使用空玻璃瓶与tofflenut灌木互动。", hunger: "2 (1 shank)", saturation: "0.2 (Poor)", other: "给予饥饿效果\n堆叠到16" },
-        "Tofflenut Syrup": { icon: "textures/items/tofflenut_syrup", desc: "从tofflenut树液精炼的甜糖浆。", obtain: "熔炼tofflenut树液。", hunger: "6 (3 点)", saturation: "2.4 (Supernatural)", other: "堆叠到16", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\nTofflenut Sap -> Tofflenut Syrup" },
-        "Burnt Meat": { icon: "textures/items/burnt_meat", desc: "过度烹饪的肉。不太诱人。", obtain: "熔炼熟牛肉或熟猪排。", hunger: "2 (1 shank)", saturation: "0.2 (Poor)", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\nCooked Beef -> Burnt Meat\nCooked Porkchop -> Burnt Meat" },
-        "Burnt Poultry Meat": { icon: "textures/items/burnt_meat2", desc: "过度烹饪的家禽肉。不太诱人。", obtain: "熔炼熟鸡肉、熟兔肉、熟火鸡或熟火鸡腿。", hunger: "2 (1 shank)", saturation: "0.2 (Poor)", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\nCooked Chicken -> Burnt Poultry Meat\nCooked Rabbit -> Burnt Poultry Meat\nCooked Turkey -> Burnt Poultry Meat\nCooked Turkey Leg -> Burnt Poultry Meat" },
-        "Onion Slice": { icon: "textures/items/onion_slice", desc: "用于烹饪的薄洋葱片。", obtain: "春洋葱或红春洋葱 (无特定摆放)。", hunger: "1 (0.5 点)", saturation: "1.2 (Normal)", other: "30%堆肥几率", recipe: "§l§6食谱:§r §7工作台 (无特定摆放)§r\n[Spring Onion] or [Red Spring Onion]\n§7= Onion Slice x3§r" },
-        "Onion Rings": { icon: "textures/items/onion_rings", desc: "脆炸洋葱圈。", obtain: "熔炼洋葱片。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30%堆肥几率", recipe: "§l§6Smelting:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\nOnion Slice -> Onion Rings" },
-        "Onion Stew": { icon: "textures/items/onion_stew", desc: "焦糖洋葱和奶酪的美味炖菜。", obtain: "大蒜、奶酪、盐、洋葱片 x2、水桶、钢碗。", hunger: "10 (5 点)", saturation: "1.6 (Good)", other: "只能堆叠到1", recipe: "§l§6食谱:§r §7工作台§r\n[Garlic][Cheese][Salt]\n[Onion Slice][Water Bucket][Onion Slice]\n[ ][Steel Bowl][ ]\n§7= Onion Stew x1 + Bucket x1§r" },
-        "Slime Soup": { icon: "textures/items/slime_soup", desc: "胶状汤。弹跳质地。", obtain: "史莱姆球 x3、钢碗。", hunger: "8 (4 点)", saturation: "1.6 (Good)", other: "只能堆叠到1", recipe: "§l§6食谱:§r §7工作台§r\n[Slimeball][Slimeball][Slimeball]\n[ ][Steel Bowl][ ]\n§7= Slime Soup x1§r" },
-        "根茎炖菜": { icon: "textures/items/roots_stew", desc: "用根菜制作的浓稠炖菜.", obtain: "小红萝卜、甜菜根、欧防风、萝卜、钢碗.", hunger: "8 (4 点)", saturation: "1.6 (好)", other: "仅堆叠到1", recipe: "§l§6食谱:§r §7工作台§r\n[ ][小红萝卜][ ]\n[甜菜根][钢碗][欧防风]\n[ ][萝卜][ ]\n§7= 根茎炖菜 x1§r" },
+"其他食物": { icon: "textures/items/beef_sandwich", items: {
+        "牛肉三明治": { icon: "textures/items/beef_sandwich", desc: "塞满熟牛肉和生菜的丰盛三明治。", obtain: "面包 + 熟牛肉 + 生菜 (无特定摆放)。", hunger: "12 (6 点)", saturation: "1.6 (良好)", recipe: "§l§6 食谱:§r §7 工作台 (无特定摆放)§r\n[面包] + [熟牛肉] + [生菜]\n§7= 牛肉三明治 x1§r" },
+        "沙拉": { icon: "textures/items/salad", desc: "混合蔬菜的新鲜沙拉。", obtain: "土豆 + 胡萝卜 + 甜菜根 + 碗 (无特定摆放)。", hunger: "6 (3 点)", saturation: "1.2 (普通)", recipe: "§l§6 食谱:§r §7 工作台 (无特定摆放)§r\n[马铃薯] + [胡萝卜] + [甜菜根] + [碗]\n§7= 沙拉 x1§r" },
+                "甜莓酸奶": { icon: "textures/items/sweet_berry_yogurt", desc: "混合甜莓的奶油酸奶。食用速度加倍。", obtain: "甜莓、牛奶桶、碗。", hunger: "4 (2 点)", saturation: "2.4 (极佳)", other: "食用速度加倍\n仅可堆叠至 1 个", recipe: "§l§6 食谱:§r §7 工作台§r\n[甜莓]\n[牛奶桶]\n[碗]\n§7= 甜莓酸奶 x1 + 空桶 x1§r" },
+        "托夫坚果汤": { icon: "textures/items/tofflenut_broth", desc: "一种用托夫坚果浆果制成的温暖肉汤。", obtain: "托夫坚果浆果 x3 + 碗 (无特定摆放)。", hunger: "6 (3 点)", saturation: "2.4 (极佳)", other: "仅可堆叠至 1 个", recipe: "§l§6 食谱:§r §7 工作台 (无特定摆放)§r\n[托夫坚果浆果] + [托夫坚果浆果] + [托夫坚果浆果] + [碗]\n§7= 托夫坚果汤 x1§r" },
+        "托夫坚果汁液": { icon: "textures/items/tofflenut_sap", desc: "从托夫坚果灌木收集的粘稠汁液。", obtain: "用空玻璃瓶右键点击托夫坚果灌木。", hunger: "2 (1 点)", saturation: "0.2 (低)", other: "给予饥饿效果\n可堆叠至 16 个" },
+        "托夫坚果糖浆": { icon: "textures/items/tofflenut_syrup", desc: "从托夫坚果汁液提炼的甜味糖浆。", obtain: "熔炼托夫坚果汁液。", hunger: "6 (3 点)", saturation: "2.4 (极佳)", other: "可堆叠至 16 个", recipe: "§l§6 熔炼:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\n托夫坚果汁液 -> 托夫坚果糖浆" },
+        "烧焦的肉": { icon: "textures/items/burnt_meat", desc: "过度烹饪的肉。不太开胃。", obtain: "熔炼熟牛肉或熟猪排。", hunger: "2 (1 点)", saturation: "0.2 (低)", recipe: "§l§6 熔炼:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\n熟牛肉 -> 烧焦的肉\n熟猪排 -> 烧焦的肉" },
+        "烧焦的禽肉": { icon: "textures/items/burnt_meat2", desc: "过度烹饪的禽肉。不太开胃。", obtain: "熔炼熟鸡肉、熟兔肉、熟火鸡肉或熟火鸡腿。", hunger: "2 (1 点)", saturation: "0.2 (低)", recipe: "§l§6 熔炼:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\n熟鸡肉 -> 烧焦的禽肉\n熟兔肉 -> 烧焦的禽肉\n熟火鸡肉 -> 烧焦的禽肉\n熟火鸡腿 -> 烧焦的禽肉" },
+        "洋葱片": { icon: "textures/items/onion_slice", desc: "用于烹饪的薄洋葱片。", obtain: "葱或红葱 (无特定摆放)。", hunger: "1 (0.5 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", recipe: "§l§6 食谱:§r §7 工作台 (无特定摆放)§r\n[葱] 或 [红葱]\n§7= 洋葱片 x3§r" },
+        "洋葱圈": { icon: "textures/items/onion_rings", desc: "酥脆的炸洋葱圈。", obtain: "熔炼洋葱片。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", recipe: "§l§6 熔炼:§r §7 熔炉/烟熏炉/营火/灵魂营火§r\n洋葱片 -> 洋葱圈" },
+        "洋葱炖菜": { icon: "textures/items/onion_stew", desc: "一道美味的炖菜，配有焦糖洋葱和奶酪。", obtain: "大蒜、奶酪、盐、洋葱片 x2、水桶、钢碗。", hunger: "10 (5 点)", saturation: "1.6 (良好)", other: "仅可堆叠至 1 个", recipe: "§l§6 食谱:§r §7 工作台§r\n[大蒜][奶酪][盐]\n[洋葱片][水桶][洋葱片]\n[ ][钢碗][ ]\n§7= 洋葱炖菜 x1 + 空桶 x1§r" },
+        "史莱姆汤": { icon: "textures/items/slime_soup", desc: "一种凝胶状的汤。口感 Q 弹。", obtain: "史莱姆球 x3、钢碗。", hunger: "8 (4 点)", saturation: "1.6 (良好)", other: "仅可堆叠至 1 个", recipe: "§l§6 食谱:§r §7 工作台§r\n[史莱姆球][史莱姆球][史莱姆球]\n[ ][钢碗][ ]\n§7= 史莱姆汤 x1§r" },
+        "根茎炖菜": { icon: "textures/items/roots_stew", desc: "用根菜制作的浓稠炖菜。", obtain: "小红萝卜、甜菜根、欧防风、萝卜、钢碗。", hunger: "8 (4 点)", saturation: "1.6 (良好)", other: "仅可堆叠至 1 个", recipe: "§l§6 食谱:§r §7 工作台§r\n[ ][小红萝卜][ ]\n[甜菜根][钢碗][欧防风]\n[ ][萝卜][ ]\n§7= 根茎炖菜 x1§r" },
         "炒菜": { icon: "textures/items/stir_fry", desc: "用锅炒的蔬菜和米饭.", obtain: "胡萝卜 + 熟米饭 + 西兰花 + 洋葱（任意类型）+ 钢碗 + 盐（无定形）.", hunger: "8 (4 点)", saturation: "1.6 (好)", other: "仅堆叠到1", recipe: "§l§6食谱:§r §7工作台 (无定形)§r\n[胡萝卜] + [熟米饭] + [西兰花] + [洋葱] + [钢碗] + [盐]\n§7= 炒菜 x1§r" },
         "咖喱": { icon: "textures/items/curry", desc: "加入蔬菜和米饭的香料咖喱.", obtain: "生姜、熟米饭、芜菁种子、番茄、钢碗、红辣椒.", hunger: "8 (4 点)", saturation: "1.6 (好)", other: "仅堆叠到1", recipe: "§l§6食谱:§r §7工作台§r\n[生姜][熟米饭][芜菁种子]\n[番茄][钢碗][红辣椒]\n§7= 咖喱 x1§r" },
         "奶油火鸡炖菜": { icon: "textures/items/creamy_turkey_stew", desc: "用火鸡腿、牛奶和洋葱制作的丰富奶油炖菜.", obtain: "熟的火鸡腿 x2、牛奶瓶 x2、洋葱片 x2、钢碗（有定形）.", hunger: "8 (4 点)", saturation: "1.6 (好)", other: "仅堆叠到1", recipe: "§l§6食谱:§r §7工作台§r\n[牛奶瓶][熟的火鸡腿][牛奶瓶]\n[洋葱片][钢碗][洋葱片]\n§7= 奶油火鸡炖菜 x1 + 玻璃牛奶瓶 x2§r" },
@@ -249,54 +249,55 @@ const CATEGORIES = {
             { name: "生菜种子", icon: "textures/items/lettuce_seeds", desc: "用于种植生菜的种子.不可制作.", obtain: "从破坏落叶或荒漠灌木掉落.", hunger: null, saturation: null, other: "30% 堆肥几率" },
             { name: "生菜箱", icon: "textures/blocks/crop_crates/lettuce_crate_side", desc: "装满生菜的储存木箱.", obtain: "用生菜 x9 制作.可逆.", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[生菜][生菜][生菜]\n[生菜][生菜][生菜]\n[生菜][生菜][生菜]\n§7= 生菜箱 x1§r" }
         ]},
-        "Broccoli": { icon: "textures/items/broccoli", desc: "一颗新鲜的西兰花。", obtain: "在农田上从西兰花种子生长。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance", related: [
-            { name: "西兰花种子", icon: "textures/items/broccoli_seeds", desc: "用于种植西兰花的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30 percent compost chance" },
-            { name: "西兰花箱", icon: "textures/blocks/crop_crates/broccoli_crate_side", desc: "装满西兰花的存储箱。", obtain: "从西兰花x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Broccoli][Broccoli][Broccoli]\n[Broccoli][Broccoli][Broccoli]\n[Broccoli][Broccoli][Broccoli]\n§7= Broccoli Crate x1§r" }
+                "西兰花": { icon: "textures/items/broccoli", desc: "一颗新鲜的西兰花。", obtain: "在农田上从西兰花种子生长。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", related: [
+            { name: "西兰花种子", icon: "textures/items/broccoli_seeds", desc: "用于种植西兰花的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30% 堆肥几率" },
+            { name: "西兰花箱", icon: "textures/blocks/crop_crates/broccoli_crate_side", desc: "装满西兰花的存储箱。", obtain: "从西兰花 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[西兰花][西兰花][西兰花]\n[西兰花][西兰花][西兰花]\n[西兰花][西兰花][西兰花]\n§7= 西兰花箱 x1§r" }
         ]},
-        "Cauliflower": { icon: "textures/items/cauliflower", desc: "一颗白色的花椰菜。", obtain: "在农田上从花椰菜种子生长。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance", related: [
-            { name: "花椰菜种子", icon: "textures/items/cauliflower_seeds", desc: "用于种植花椰菜的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30 percent compost chance" },
-            { name: "花椰菜箱", icon: "textures/blocks/crop_crates/cauliflower_crate_side", desc: "装满花椰菜的存储箱。", obtain: "从花椰菜x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Cauliflower][Cauliflower][Cauliflower]\n[Cauliflower][Cauliflower][Cauliflower]\n[Cauliflower][Cauliflower][Cauliflower]\n§7= Cauliflower Crate x1§r" }
+        "花椰菜": { icon: "textures/items/cauliflower", desc: "一颗白色的花椰菜。", obtain: "在农田上从花椰菜种子生长。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", related: [
+            { name: "花椰菜种子", icon: "textures/items/cauliflower_seeds", desc: "用于种植花椰菜的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30% 堆肥几率" },
+            { name: "花椰菜箱", icon: "textures/blocks/crop_crates/cauliflower_crate_side", desc: "装满花椰菜的存储箱。", obtain: "从花椰菜 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[花椰菜][花椰菜][花椰菜]\n[花椰菜][花椰菜][花椰菜]\n[花椰菜][花椰菜][花椰菜]\n§7= 花椰菜箱 x1§r" }
         ]},
-        "Zucchini": { icon: "textures/items/zucchini", desc: "绿色的夏季南瓜。", obtain: "在农田上从西葫芦种子生长。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance", related: [
-            { name: "西葫芦种子", icon: "textures/items/zucchini_seeds", desc: "用于种植西葫芦的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30 percent compost chance" },
-            { name: "西葫芦箱", icon: "textures/blocks/crop_crates/zucchini_crate_side", desc: "装满西葫芦的存储箱。", obtain: "从西葫芦x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Zucchini][Zucchini][Zucchini]\n[Zucchini][Zucchini][Zucchini]\n[Zucchini][Zucchini][Zucchini]\n§7= Zucchini Crate x1§r" }
+        "西葫芦": { icon: "textures/items/zucchini", desc: "绿色的夏季南瓜。", obtain: "在农田上从西葫芦种子生长。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", related: [
+            { name: "西葫芦种子", icon: "textures/items/zucchini_seeds", desc: "用于种植西葫芦的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30% 堆肥几率" },
+            { name: "西葫芦箱", icon: "textures/blocks/crop_crates/zucchini_crate_side", desc: "装满西葫芦的存储箱。", obtain: "从西葫芦 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[西葫芦][西葫芦][西葫芦]\n[西葫芦][西葫芦][西葫芦]\n[西葫芦][西葫芦][西葫芦]\n§7= 西葫芦箱 x1§r" }
         ]},
-        "Persimmon": { icon: "textures/items/persimmon", desc: "甜美的橙色水果。", obtain: "在农田上从柿子种子生长。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance", related: [
-            { name: "柿子种子", icon: "textures/items/persimmon_seeds", desc: "用于种植柿子的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30 percent compost chance" },
-            { name: "柿子箱", icon: "textures/blocks/crop_crates/persimmon_crate_side", desc: "装满柿子的存储箱。", obtain: "从柿子x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Persimmon][Persimmon][Persimmon]\n[Persimmon][Persimmon][Persimmon]\n[Persimmon][Persimmon][Persimmon]\n§7= Persimmon Crate x1§r" }
+                "柿子": { icon: "textures/items/persimmon", desc: "甜美的橙色水果。", obtain: "在农田上从柿子种子生长。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", related: [
+            { name: "柿子种子", icon: "textures/items/persimmon_seeds", desc: "用于种植柿子的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30% 堆肥几率" },
+            { name: "柿子箱", icon: "textures/blocks/crop_crates/persimmon_crate_side", desc: "装满柿子的存储箱。", obtain: "从柿子 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[柿子][柿子][柿子]\n[柿子][柿子][柿子]\n[柿子][柿子][柿子]\n§7= 柿子箱 x1§r" }
         ]},
-        "Red Chili Pepper": { icon: "textures/items/red_chili_pepper", desc: "火辣的辣椒。小心！", obtain: "在农田上从红辣椒种子生长。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance", related: [
-            { name: "红辣椒种子", icon: "textures/items/red_chili_pepper_seeds", desc: "用于种植辣辣椒的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30 percent compost chance" },
-            { name: "红辣椒箱", icon: "textures/blocks/crop_crates/red_chili_crate_side", desc: "装满红辣椒的存储箱。", obtain: "从红辣椒x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Red Chili][Red Chili][Red Chili]\n[Red Chili][Red Chili][Red Chili]\n[Red Chili][Red Chili][Red Chili]\n§7= Red Chili Crate x1§r" }
+        "红辣椒": { icon: "textures/items/red_chili_pepper", desc: "火辣的辣椒。小心！", obtain: "在农田上从红辣椒种子生长。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", related: [
+            { name: "红辣椒种子", icon: "textures/items/red_chili_pepper_seeds", desc: "用于种植辣辣椒的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30% 堆肥几率" },
+            { name: "红辣椒箱", icon: "textures/blocks/crop_crates/red_chili_crate_side", desc: "装满红辣椒的存储箱。", obtain: "从红辣椒 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[红辣椒][红辣椒][红辣椒]\n[红辣椒][红辣椒][红辣椒]\n[红辣椒][红辣椒][红辣椒]\n§7= 红辣椒箱 x1§r" }
         ]},
-        "Bell Peppers": { icon: "textures/items/orange_pepper", desc: "甜椒，有红色、橙色、黄色和绿色品种。生长时颜色随机。", obtain: "在农田上从甜椒种子生长。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance", related: [
-            { name: "红甜椒", icon: "textures/items/red_pepper", desc: "甜美的红色甜椒。", obtain: "从甜椒种子生长。颜色随机。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance" },
-            { name: "橙甜椒", icon: "textures/items/orange_pepper", desc: "甜美的橙色甜椒。", obtain: "从甜椒种子生长。颜色随机。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance" },
-            { name: "黄甜椒", icon: "textures/items/yellow_pepper", desc: "甜美的黄色甜椒。", obtain: "从甜椒种子生长。颜色随机。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance" },
-            { name: "绿甜椒", icon: "textures/items/green_pepper", desc: "脆绿甜椒。", obtain: "从甜椒种子生长。颜色随机。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance" },
-            { name: "甜椒种子", icon: "textures/items/bell_pepper_seeds", desc: "用于种植甜椒的种子。颜色随机。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30 percent compost chance" },
-            { name: "红甜椒箱", icon: "textures/blocks/crop_crates/red_bell_pepper_crate_side", desc: "一箱红甜椒。", obtain: "从红甜椒x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Red Pepper x9]\n§7= Red Bell Pepper Crate x1§r" },
-            { name: "橙甜椒箱", icon: "textures/blocks/crop_crates/orange_bell_pepper_crate_side", desc: "一箱橙甜椒。", obtain: "从橙甜椒x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Orange Pepper x9]\n§7= Orange Bell Pepper Crate x1§r" },
-            { name: "黄甜椒箱", icon: "textures/blocks/crop_crates/yellow_bell_pepper_crate_side", desc: "一箱黄甜椒。", obtain: "从黄甜椒x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Yellow Pepper x9]\n§7= Yellow Bell Pepper Crate x1§r" },
-            { name: "绿甜椒箱", icon: "textures/blocks/crop_crates/green_bell_pepper_crate_side", desc: "一箱绿甜椒。", obtain: "从绿甜椒x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Green Pepper x9]\n§7= Green Bell Pepper Crate x1§r" }
+                "甜椒": { icon: "textures/items/orange_pepper", desc: "甜椒，有红色、橙色、黄色和绿色品种。生长时颜色随机。", obtain: "在农田上从甜椒种子生长。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", related: [
+            { name: "红甜椒", icon: "textures/items/red_pepper", desc: "甜美的红色甜椒。", obtain: "从甜椒种子生长。颜色随机。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率" },
+            { name: "橙甜椒", icon: "textures/items/orange_pepper", desc: "甜美的橙色甜椒。", obtain: "从甜椒种子生长。颜色随机。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率" },
+            { name: "黄甜椒", icon: "textures/items/yellow_pepper", desc: "甜美的黄色甜椒。", obtain: "从甜椒种子生长。颜色随机。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率" },
+            { name: "绿甜椒", icon: "textures/items/green_pepper", desc: "脆绿甜椒。", obtain: "从甜椒种子生长。颜色随机。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率" },
+            { name: "甜椒种子", icon: "textures/items/bell_pepper_seeds", desc: "用于种植甜椒的种子。颜色随机。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30% 堆肥几率" },
+            { name: "红甜椒箱", icon: "textures/blocks/crop_crates/red_bell_pepper_crate_side", desc: "一箱红甜椒。", obtain: "从红甜椒 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[红甜椒 x9]\n§7= 红甜椒箱 x1§r" },
+            { name: "橙甜椒箱", icon: "textures/blocks/crop_crates/orange_bell_pepper_crate_side", desc: "一箱橙甜椒。", obtain: "从橙甜椒 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[橙甜椒 x9]\n§7= 橙甜椒箱 x1§r" },
+            { name: "黄甜椒箱", icon: "textures/blocks/crop_crates/yellow_bell_pepper_crate_side", desc: "一箱黄甜椒。", obtain: "从黄甜椒 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[黄甜椒 x9]\n§7= 黄甜椒箱 x1§r" },
+                    { name: "绿甜椒箱", icon: "textures/blocks/crop_crates/green_bell_pepper_crate_side", desc: "一箱绿甜椒。", obtain: "从绿甜椒 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[绿甜椒 x9]\n§7= 绿甜椒箱 x1§r" }
         ]},
-        "Barley": { icon: "textures/items/barley", desc: "用于烘焙和酿造的大麦粒。生食不可食用。", obtain: "在农田上从大麦种子生长。", hunger: null, saturation: null, other: "30 percent compost chance", related: [
-            { name: "大麦种子", icon: "textures/items/barley_seeds", desc: "用于种植大麦的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30 percent compost chance" },
-            { name: "大麦箱", icon: "textures/blocks/crop_crates/barley_crate_side", desc: "装满大麦的存储箱。可以合成大麦干草块。", obtain: "从大麦x9合成。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Barley][Barley][Barley]\n[Barley][Barley][Barley]\n[Barley][Barley][Barley]\n§7= Barley Crate x1§r" },
-            { name: "大麦干草块", icon: "textures/blocks/barley_hay_block_side", desc: "一捆干燥的大麦。可逆回大麦x9。", obtain: "从大麦箱合成。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Barley Crate]\n§7= Barley Hay Block x1§r\n\n§7Barley Hay Block -> Barley x9§r" }
+        "大麦": { icon: "textures/items/barley", desc: "用于烘焙和酿造的大麦粒。生食不可食用。", obtain: "在农田上从大麦种子生长。", hunger: null, saturation: null, other: "30% 堆肥几率", related: [
+            { name: "大麦种子", icon: "textures/items/barley_seeds", desc: "用于种植大麦的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30% 堆肥几率" },
+            { name: "大麦箱", icon: "textures/blocks/crop_crates/barley_crate_side", desc: "装满大麦的存储箱。可以合成大麦干草块。", obtain: "从大麦 x9 合成。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[大麦][大麦][大麦]\n[大麦][大麦][大麦]\n[大麦][大麦][大麦]\n§7= 大麦箱 x1§r" },
+            { name: "大麦干草块", icon: "textures/blocks/barley_hay_block_side", desc: "一捆干燥的大麦。可逆回大麦 x9。", obtain: "从大麦箱合成。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[大麦箱]\n§7= 大麦干草块 x1§r\n\n§7 大麦干草块 -> 大麦 x9§r" }
         ]},
-        "Rye": { icon: "textures/items/rye", desc: "用于烘焙的黑麦穗。不可食用。", obtain: "在农田上从黑麦种子生长。", hunger: null, saturation: null, other: "30 percent compost chance", related: [
-            { name: "黑麦种子", icon: "textures/items/rye_seeds", desc: "用于种植黑麦的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30 percent compost chance" },
-            { name: "黑麦箱", icon: "textures/blocks/crop_crates/rye_crate_side", desc: "装满黑麦的存储箱。可以合成黑麦干草块。", obtain: "从黑麦x9合成。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Rye][Rye][Rye]\n[Rye][Rye][Rye]\n[Rye][Rye][Rye]\n§7= Rye Crate x1§r" },
-            { name: "黑麦干草块", icon: "textures/blocks/rye_hay_block_side", desc: "一捆干燥的黑麦。可逆回黑麦x9。", obtain: "从黑麦箱合成。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Rye Crate]\n§7= Rye Hay Block x1§r\n\n§7Rye Hay Block -> Rye x9§r" }
+        "黑麦": { icon: "textures/items/rye", desc: "用于烘焙的黑麦穗。不可食用。", obtain: "在农田上从黑麦种子生长。", hunger: null, saturation: null, other: "30% 堆肥几率", related: [
+            { name: "黑麦种子", icon: "textures/items/rye_seeds", desc: "用于种植黑麦的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30% 堆肥几率" },
+            { name: "黑麦箱", icon: "textures/blocks/crop_crates/rye_crate_side", desc: "装满黑麦的存储箱。可以合成黑麦干草块。", obtain: "从黑麦 x9 合成。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[黑麦][黑麦][黑麦]\n[黑麦][黑麦][黑麦]\n[黑麦][黑麦][黑麦]\n§7= 黑麦箱 x1§r" }
         ]},
-        "Rice": { icon: "textures/items/raw_rice", desc: "在水淹农田中生长的稻米。生食不可食用。", obtain: "在水淹农田上生长。从野生稻米获得。", hunger: null, saturation: null, other: "30 percent compost chance", related: [
-            { name: "野生稻米", icon: "textures/items/wild_rice", desc: "在浅水中生长的野生稻米。", obtain: "在丛林、沼泽和红树林沼泽生成。破坏时掉落生米。", hunger: null, saturation: null, other: "65 percent compost chance" },
-            { name: "稻米箱", icon: "textures/blocks/crop_crates/rice_crate_side", desc: "装满生米的存储箱。", obtain: "从生米x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[生米][生米][生米]\n[生米][生米][生米]\n[生米][生米][生米]\n§7= Rice Crate x1§r" }
+                    { name: "黑麦干草块", icon: "textures/blocks/rye_hay_block_side", desc: "一捆干燥的黑麦。可逆回黑麦 x9。", obtain: "从黑麦箱合成。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[黑麦箱]\n§7= 黑麦干草块 x1§r\n\n§7 黑麦干草块 -> 黑麦 x9§r" }
         ]},
-        "Garlic": { icon: "textures/items/garlic", desc: "一颗辛辣的大蒜。收获时会自我种植。", obtain: "在大蒜上种植。从乌鸦大蒜获得。", hunger: "2 (1 shank)", saturation: "1.2 (Normal)", other: "30 percent compost chance", related: [
-            { name: "乌鸦大蒜", icon: "textures/items/crow_garlic", desc: "野生大蒜植物。", obtain: "在森林、沼泽和草甸生成。破坏时掉落大蒜。", hunger: null, saturation: null, other: "65 percent compost chance" },
-            { name: "大蒜箱", icon: "textures/blocks/crop_crates/garlic_crate_side", desc: "装满大蒜的存储箱。", obtain: "从大蒜x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Garlic][Garlic][Garlic]\n[Garlic][Garlic][Garlic]\n[Garlic][Garlic][Garlic]\n§7= Garlic Crate x1§r" }
+        "稻米": { icon: "textures/items/raw_rice", desc: "在水淹农田中生长的稻米。生食不可食用。", obtain: "在水淹农田上生长。从野生稻米获得。", hunger: null, saturation: null, other: "30% 堆肥几率", related: [
+            { name: "野生稻米", icon: "textures/items/wild_rice", desc: "在浅水中生长的野生稻米。", obtain: "在丛林、沼泽和红树林沼泽生成。破坏时掉落生米。", hunger: null, saturation: null, other: "65% 堆肥几率" },
+            { name: "稻米箱", icon: "textures/blocks/crop_crates/rice_crate_side", desc: "装满生米的存储箱。", obtain: "从生米 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[生米][生米][生米]\n[生米][生米][生米]\n[生米][生米][生米]\n§7= 稻米箱 x1§r" }
+        ]},
+        "大蒜": { icon: "textures/items/garlic", desc: "一颗辛辣的大蒜。收获时会自我种植。", obtain: "在大蒜上种植。从乌鸦大蒜获得。", hunger: "2 (1 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", related: [
+            { name: "乌鸦大蒜", icon: "textures/items/crow_garlic", desc: "野生大蒜植物。", obtain: "在森林、沼泽和草甸生成。破坏时掉落大蒜。", hunger: null, saturation: null, other: "65% 堆肥几率" },
+            { name: "大蒜箱", icon: "textures/blocks/crop_crates/garlic_crate_side", desc: "装满大蒜的存储箱。", obtain: "从大蒜x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[大蒜][大蒜][大蒜]\n[大蒜][大蒜][大蒜]\n[大蒜][大蒜][大蒜]\n§7= Garlic Crate x1§r" }
         ]},
         "生姜": { icon: "textures/items/ginger", desc: "用于烹饪和调味的生姜根.不可食用.种植后会自动重新生成.", obtain: "通过破坏泥土和泥土相关方块获得.从缠根泥土中更容易获得.在农田上种植.", hunger: null, saturation: null, other: "30% 堆肥几率", related: [
             { name: "生姜箱", icon: "textures/blocks/crop_crates/ginger_crate_side", desc: "装满生姜根的储存木箱.", obtain: "用生姜 x9 制作.可逆.", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[生姜][生姜][生姜]\n[生姜][生姜][生姜]\n[生姜][生姜][生姜]\n§7= 生姜箱 x1§r" }
@@ -322,12 +323,12 @@ const CATEGORIES = {
             { name: "野生红薯", icon: "textures/items/wild_sweet_potato", desc: "野生红薯藤蔓.", obtain: "生成在针叶林、草甸和极地山脉.被破坏时掉落红薯.", hunger: null, saturation: null, other: "65% 堆肥几率" },
             { name: "红薯箱", icon: "textures/blocks/crop_crates/sweet_potato_crate_side", desc: "装满红薯的木箱.", obtain: "用红薯 x9 制作.可逆.", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[红薯 x9]\n§7= 红薯箱 x1§r" }
         ]},
-        "Cherries": { icon: "textures/items/cherries", desc: "一对鲜红的樱桃。", obtain: "在农田上从樱桃种子生长。", hunger: "4 (2 点)", saturation: "0.2 (Poor)", other: "30 percent compost chance", related: [{ name: "樱桃箱", icon: "textures/blocks/crop_crates/cherry_crate_side", desc: "一箱樱桃。", obtain: "从樱桃x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Cherries x9]\n§7= Cherry Crate x1§r" }] },
-        "Plum": { icon: "textures/items/plum", desc: "一种小而甜的紫色水果。", obtain: "在农田上从李子种子生长。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance", related: [{ name: "李子箱", icon: "textures/blocks/crop_crates/plum_crate_side", desc: "一箱李子。", obtain: "从李子x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Plum x9]\n§7= Plum Crate x1§r" }] },
-        "Green Apple": { icon: "textures/items/green_apple", desc: "酸涩的青苹果。可以替代苹果用于金苹果、苹果果冻和苹果汁配方。", obtain: "在农田上从青苹果种子生长。", hunger: "4 (2 点)", saturation: "1.2 (Normal)", other: "30 percent compost chance", related: [{ name: "青苹果箱", icon: "textures/blocks/crop_crates/green_apple_crate_side", desc: "一箱青苹果。", obtain: "从青苹果x9合成。可逆。", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[Green Apple x9]\n§7= Green Apple Crate x1§r" }] },
-        "White Pumpkin": { icon: "textures/blocks/pumpkins_melons/white_pumpkin_side", desc: "在苍白花园中发现的苍白南瓜。可以剪刀雕刻，合成种子、派，或用于生成铜、铁和雪傀儡。", obtain: "在苍白花园生物群系中生成。", hunger: null, saturation: null, other: "可以生成铜、铁和雪傀儡\n用剪刀雕刻得到雕刻苍白南瓜", related: [
-            { name: "苍白南瓜种子", icon: "textures/items/white_pumpkin_seeds", desc: "用于种植苍白南瓜的种子。", obtain: "从苍白南瓜合成（产出4个种子）。", hunger: null, saturation: null, other: "30 percent compost chance" },
-            { name: "苍白南瓜派", icon: "textures/items/white_pumpkin_pie", desc: "由苍白南瓜制成的奶油派。可以放置。", obtain: "苍白南瓜 + 糖 + 蛋（任何类型） - shapeless.", hunger: "8 (4 点)", saturation: "0.6 (Low)", other: "Placeable\n100 percent compost chance", recipe: "§l§6食谱:§r §7工作台 (Shapeless)§r\n[White Pumpkin] + [糖] + [鸡蛋]\n§7= White Pumpkin Pie x1§r" },
+                "樱桃": { icon: "textures/items/cherries", desc: "一对鲜红的樱桃。", obtain: "在农田上从樱桃种子生长。", hunger: "4 (2 点)", saturation: "0.2 (低)", other: "30% 堆肥几率", related: [{ name: "樱桃箱", icon: "textures/blocks/crop_crates/cherry_crate_side", desc: "一箱樱桃。", obtain: "从樱桃 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[樱桃 x9]\n§7= 樱桃箱 x1§r" }] },
+        "李子": { icon: "textures/items/plum", desc: "一种小而甜的紫色水果。", obtain: "在农田上从李子种子生长。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", related: [{ name: "李子箱", icon: "textures/blocks/crop_crates/plum_crate_side", desc: "一箱李子。", obtain: "从李子 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[李子 x9]\n§7= 李子箱 x1§r" }] },
+        "青苹果": { icon: "textures/items/green_apple", desc: "酸涩的青苹果。可以替代苹果用于金苹果、苹果果冻和苹果汁配方。", obtain: "在农田上从青苹果种子生长。", hunger: "4 (2 点)", saturation: "1.2 (普通)", other: "30% 堆肥几率", related: [{ name: "青苹果箱", icon: "textures/blocks/crop_crates/green_apple_crate_side", desc: "一箱青苹果。", obtain: "从青苹果 x9 合成。可逆。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[青苹果 x9]\n§7= 青苹果箱 x1§r" }] },
+        "苍白南瓜": { icon: "textures/blocks/pumpkins_melons/white_pumpkin_side", desc: "在苍白花园中发现的苍白南瓜。可以剪刀雕刻，合成种子、派，或用于生成铜、铁和雪傀儡。", obtain: "在苍白花园生物群系中生成。", hunger: null, saturation: null, other: "可以生成铜、铁和雪傀儡\n用剪刀雕刻得到雕刻苍白南瓜", related: [
+            { name: "苍白南瓜种子", icon: "textures/items/white_pumpkin_seeds", desc: "用于种植苍白南瓜的种子。", obtain: "从苍白南瓜合成（产出 4 个种子）。", hunger: null, saturation: null, other: "30% 堆肥几率" },
+            { name: "苍白南瓜派", icon: "textures/items/white_pumpkin_pie", desc: "由苍白南瓜制成的奶油派。可以放置。", obtain: "苍白南瓜 + 糖 + 蛋（任何类型） - 无序合成。", hunger: "8 (4 点)", saturation: "0.6 (低)", other: "可放置\n100% 堆肥几率", recipe: "§l§6 食谱:§r §7 工作台 (无序合成)§r\n[苍白南瓜] + [糖] + [鸡蛋]\n§7= 苍白南瓜派 x1§r" },
             { name: "雕刻苍白南瓜", icon: "textures/blocks/pumpkins_melons/white_carved_pumpkin_front", desc: "雕刻的苍白南瓜。用于合成杰克南瓜灯变体。", obtain: "用剪刀雕刻苍白南瓜。在工作台单独合成以制作可穿戴物品。可穿戴物品可以通过铁砧附魔诅咒。", hunger: null, saturation: null, other: "可穿戴版本：无覆盖，在物品栏中反向显示" },
             { name: "苍白杰克南瓜灯", icon: "textures/blocks/pumpkins_melons/white_jack_o_lantern_front", desc: "发光的苍白杰克南瓜灯。", obtain: "雕刻苍白南瓜 + 火把。", hunger: null, saturation: null },
             { name: "苍白铜杰克南瓜灯", icon: "textures/blocks/pumpkins_melons/white_copper_jack_o_lantern_front", desc: "带有温暖铜色光芒的苍白杰克南瓜灯。", obtain: "雕刻苍白南瓜 + 铜火把。", hunger: null, saturation: null },
@@ -412,7 +413,7 @@ function openCategory(player, cat) {
         system.run(async () => {
             const f = new ActionFormData().title(`§l§1${cat}`).body("§7Choose a type:§r");
             for (const s of subs) f.button(s, c.subcategories[s].icon);
-            f.button("§c<- Back to Categories");
+            f.button("§c<- 返回分类");
             const r = await showWithRetry(player, p => f.show(p));
             if (r.canceled || r.selection === undefined) return;
             player.playSound("random.page_turn");
@@ -425,7 +426,7 @@ function openCategory(player, cat) {
     system.run(async () => {
         const f = new ActionFormData().title(`§l§1${cat}`).body(`§7${items.length} entries. Tap to view details.§r`);
         for (const n of items) f.button(n, c.items[n].icon);
-        f.button("§c<- Back to Categories");
+        f.button("§c<- 返回分类");
         const r = await showWithRetry(player, p => f.show(p));
         if (r.canceled || r.selection === undefined) return;
         player.playSound("random.page_turn");
@@ -440,7 +441,7 @@ function openSubcategory(player, parent, sub) {
     system.run(async () => {
         const f = new ActionFormData().title(`§l§1${sub}`).body(`§7${items.length} entries. Tap to view details.§r`);
         for (const n of items) f.button(n, s.items[n].icon);
-        f.button(`§c<- Back to ${parent}`);
+        f.button(`§c<- 返回${parent}`);
         const r = await showWithRetry(player, p => f.show(p));
         if (r.canceled || r.selection === undefined) return;
         player.playSound("random.page_turn");
@@ -454,7 +455,7 @@ function openSubItemDetail(player, parent, sub, itemName) {
     const b = buildDetailBody(item);
     system.run(async () => {
         const f = new ActionFormData().title(`§l${itemName}`).body(b);
-        f.button(`§c<- Back to ${sub}`);
+        f.button(`§c<- 返回${sub}`);
         const r = await showWithRetry(player, p => f.show(p));
         if (r.canceled || r.selection === undefined) return;
         if (r.selection === 0) { player.playSound("random.page_turn"); openSubcategory(player, parent, sub); }
@@ -469,7 +470,7 @@ function openItemDetail(player, cat, itemName) {
     system.run(async () => {
         const f = new ActionFormData().title(`§l${itemName}`).body(b);
         for (const r of rel) f.button(r.name, r.icon);
-        f.button(`§c<- Back to ${cat}`);
+        f.button(`§c<- 返回${cat}`);
         const r = await showWithRetry(player, p => f.show(p));
         if (r.canceled || r.selection === undefined) return;
         player.playSound("random.page_turn");
@@ -482,7 +483,7 @@ function openRelatedDetail(player, cat, parent, rel) {
     const b = buildDetailBody(rel);
     system.run(async () => {
         const f = new ActionFormData().title(`§l${rel.name}`).body(b);
-        f.button(`§c<- Back to ${parent}`);
+        f.button(`§c<- 返回${parent}`);
         const r = await showWithRetry(player, p => f.show(p));
         if (r.canceled || r.selection === undefined) return;
         if (r.selection === 0) { player.playSound("random.page_turn"); openItemDetail(player, cat, parent); }
