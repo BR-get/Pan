@@ -287,9 +287,8 @@ const CATEGORIES = {
         ]},
         "黑麦": { icon: "textures/items/rye", desc: "用于烘焙的黑麦穗。不可食用。", obtain: "在农田上从黑麦种子生长。", hunger: null, saturation: null, other: "30% 堆肥几率", related: [
             { name: "黑麦种子", icon: "textures/items/rye_seeds", desc: "用于种植黑麦的种子。无法合成。", obtain: "从破坏落叶或沙漠灌木掉落。", hunger: null, saturation: null, other: "30% 堆肥几率" },
-            { name: "黑麦箱", icon: "textures/blocks/crop_crates/rye_crate_side", desc: "装满黑麦的存储箱。可以合成黑麦干草块。", obtain: "从黑麦 x9 合成。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[黑麦][黑麦][黑麦]\n[黑麦][黑麦][黑麦]\n[黑麦][黑麦][黑麦]\n§7= 黑麦箱 x1§r" }
-        ]},
-                    { name: "黑麦干草块", icon: "textures/blocks/rye_hay_block_side", desc: "一捆干燥的黑麦。可逆回黑麦 x9。", obtain: "从黑麦箱合成。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[黑麦箱]\n§7= 黑麦干草块 x1§r\n\n§7 黑麦干草块 -> 黑麦 x9§r" }
+            { name: "黑麦箱", icon: "textures/blocks/crop_crates/rye_crate_side", desc: "装满黑麦的存储箱。可以合成黑麦干草块。", obtain: "从黑麦 x9 合成。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[黑麦][黑麦][黑麦]\n[黑麦][黑麦][黑麦]\n[黑麦][黑麦][黑麦]\n§7= 黑麦箱 x1§r" },
+            { name: "黑麦干草块", icon: "textures/blocks/rye_hay_block_side", desc: "一捆干燥的黑麦。可逆回黑麦 x9。", obtain: "从黑麦箱合成。", hunger: null, saturation: null, recipe: "§l§6 食谱:§r §7 工作台§r\n[黑麦箱]\n§7= 黑麦干草块 x1§r\n\n§7 黑麦干草块 -> 黑麦 x9§r" }
         ]},
         "稻米": { icon: "textures/items/raw_rice", desc: "在水淹农田中生长的稻米。生食不可食用。", obtain: "在水淹农田上生长。从野生稻米获得。", hunger: null, saturation: null, other: "30% 堆肥几率", related: [
             { name: "野生稻米", icon: "textures/items/wild_rice", desc: "在浅水中生长的野生稻米。", obtain: "在丛林、沼泽和红树林沼泽生成。破坏时掉落生米。", hunger: null, saturation: null, other: "65% 堆肥几率" },
