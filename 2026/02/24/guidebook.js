@@ -4,7 +4,7 @@ import { ActionFormData, MessageFormData } from "@minecraft/server-ui";
 const CATEGORIES = {
     "基础物品": { icon: "textures/items/salt", items: {
         "盐和盐块": { icon: "textures/items/salt", desc: "食用盐。通过开采盐矿、熔炼获得，或由大多数水下生物掉落.", obtain: "盐矿石（直接掉落盐，无需时运）。也可以冶炼盐矿石。从一桶盐制作。大多数水下怪物掉落。.", hunger: null, saturation: null, 食谱: "§l§6食谱:§r §7工作台§r\n[一桶盐][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n§7= 盐 x9 + 水桶 x1§r", related: [
-            { name: "盐矿", icon: "textures/blocks/salt_ore", desc: "含有盐矿的矿石块。开采时掉落盐（不需要时之触）。也可以熔炼。", obtain: "生成于高度 Y=0 到 Y=160 之间的所有主世界地形中。需要任何镐。可与时运和精准采集效果一起使用。, hunger: null, saturation: null, 食谱: "§l§6Smelting:§r §7Furnace/Blast Furnace§r\nSalt Ore -> Salt" },
+            { name: "盐矿", icon: "textures/blocks/salt_ore", desc: "含有盐矿的矿石块。开采时掉落盐（不需要时之触）。也可以熔炼。", obtain: "生成于高度 Y=0 到 Y=160 之间的所有主世界地形中。需要任何镐。可与时运和精准采集效果一起使用。", hunger: null, saturation: null, 食谱: "§l§6Smelting:§r §7Furnace/Blast Furnace§r\nSalt Ore -> Salt" },
             { name: "深板盐矿", icon: "textures/blocks/deepslate_salt_ore", desc: "深板岩层中的盐矿石。开采时会掉落盐。也可以冶炼。.", obtain: "生成在所有主世界生物群系中 Y=0 以下的深板岩中。需要任何镐。可与幸运附魔和精准采集附魔一起使用。", hunger: null, saturation: null, recipe: "§l§6冶炼:§r §7熔炉/高炉§r\n深板岩盐矿 -> 盐" },
             { name: "盐块", icon: "textures/blocks/salt_block", desc: "一块压实的盐块.", obtain: "在3x3格子中放置9个盐. 可逆（盐块 -> 盐 x9）.", hunger: null, saturation: null, recipe: "§l§6食谱:§r §7工作台§r\n[盐][盐][盐]\n[盐][盐][盐]\n[盐][盐][盐]\n§7= 盐块 x1§r" },
             { name: "一桶盐", icon: "textures/items/bucket_of_salt", desc: "一桶装满盐晶的桶。", obtain: "在熔炉/熏炉中熔炼一个水桶.", hunger: null, saturation: null, recipe: "§l§6冶炼:§r §7炉/烟熏炉§r\n水桶 -> 一桶盐" }
